@@ -17,7 +17,8 @@ public class addtocart {
 	}
 
 	// Add to cart button
-	By addtocart = By.xpath("//button[(text()='ADD TO CART')]");
+	// By addtocart = By.xpath("//button[(text()='ADD TO CART')]");
+	By addtocart = By.xpath("//button[@class='_2AkmmA _2Npkh4 _2MWPVK']");
 	// Place Order button
 	By placeOrder = By.xpath("//span[(text()='Place Order')]");
 
@@ -33,11 +34,16 @@ public class addtocart {
 	By newAddtype = By.xpath("//input[@name='locationTypeTag']");
 	// Save New Addres button
 	By savebutton = By.xpath("//button[(text()='Save and Deliver Here')]");
-	//Cancel button
+	// Cancel button
 	By cancelbutton = By.xpath("//button[@class='_2AkmmA _237M5J']");
-	
 
 	public WebElement addtocartitem() {
+		String text = driver.findElement(addtocart).getText();
+		if (text.equalsIgnoreCase("ADD TO CART")) {
+			System.out.println("Adding item to chart");
+		} else {
+			System.out.println("Item is already present in chart");
+		}
 		return driver.findElement(addtocart);
 	}
 
@@ -66,8 +72,8 @@ public class addtocart {
 		driver.findElement(newCity).sendKeys(city, Keys.DOWN, Keys.ENTER);
 		Thread.sleep(1000);
 		WebElement radio1 = driver.findElement(newAddtype);
-		//radio1.click();
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		// radio1.click();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", radio1);
 		Thread.sleep(1000);
 		driver.findElement(cancelbutton).click();

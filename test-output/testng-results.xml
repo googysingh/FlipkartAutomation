@@ -2,15 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29142" started-at="2019-11-13T12:09:52 IST" finished-at="2019-11-13T12:10:21 IST">
+  <suite name="Default suite" duration-ms="33031" started-at="2019-11-18T12:47:13 IST" finished-at="2019-11-18T12:47:46 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29142" started-at="2019-11-13T12:09:52 IST" finished-at="2019-11-13T12:10:21 IST">
+    <test name="Default test" duration-ms="33031" started-at="2019-11-18T12:47:13 IST" finished-at="2019-11-18T12:47:46 IST">
       <class name="Flipkart.flipkart">
-        <test-method status="PASS" signature="login()[pri:0, instance:Flipkart.flipkart@6f1fba17]" name="login" duration-ms="29102" started-at="2019-11-13T12:09:52 IST" finished-at="2019-11-13T12:10:21 IST">
+        <test-method status="PASS" signature="driverinit()[pri:0, instance:Flipkart.flipkart@731a74c]" name="driverinit" is-config="true" duration-ms="3528" started-at="2019-11-18T12:47:13 IST" finished-at="2019-11-18T12:47:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverinit -->
+        <test-method status="PASS" signature="login()[pri:0, instance:Flipkart.flipkart@731a74c]" name="login" duration-ms="28731" started-at="2019-11-18T12:47:17 IST" finished-at="2019-11-18T12:47:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Flipkart.flipkart@731a74c]" name="teardown" is-config="true" duration-ms="737" started-at="2019-11-18T12:47:46 IST" finished-at="2019-11-18T12:47:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- Flipkart.flipkart -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
